@@ -357,3 +357,39 @@ export const initialNotifications: EHRNotification[] = [
     read: false,
   },
 ];
+
+export const initialDraftNotes: DraftNote[] = [
+  {
+    id: "note-101",
+    patientName: "Arjun Sharma",
+    patientAge: "45",
+    patientGender: "Male",
+    chiefComplaint: "Acute retrosternal chest discomfort radiating to left arm on exertion.",
+    symptoms: ["Chest tightness", "Mild shortness of breath", "Diaphoresis during stairs climb"],
+    history: ["Hypertension (5 yrs)", "Hyperlipidemia"],
+    allergies: ["Penicillin"],
+    medications: ["Amlodipine 5mg", "Atorvastatin 20mg"],
+    transcript: "Doctor: Good morning Arjun, what brings you in today?\nPatient: I felt a tight pressure in my chest while walking up the stairs this morning. It lasted about 10 minutes.\nDoctor: Did it spread anywhere?\nPatient: Yes, down my left arm a bit, and I broke out into a sweat.\nDoctor: Any shortness of breath or dizziness?\nPatient: A little short of breath. I take my BP meds regularly.",
+    status: "DRAFT",
+    timestamp: "2026-05-20T09:20:00Z",
+    sourceDevice: "iQOO 12 Pro (Android)",
+    aiConfidence: 0.94,
+  },
+  {
+    id: "note-102",
+    patientName: "Neha Kapoor",
+    patientAge: "38",
+    patientGender: "Female",
+    chiefComplaint: "Recurrent palpitations and episodic anxiety over the past 2 weeks.",
+    symptoms: ["Racing heart", "Fatigue", "Lightheadedness"],
+    history: ["Mild Asthma"],
+    allergies: ["Sulfa drugs"],
+    medications: ["Salbutamol inhaler PRN"],
+    transcript: "Doctor: Hello Neha, tell me about these palpitations.\nPatient: My heart starts racing suddenly, even when sitting at my desk. It feels like 120 beats per minute.\nDoctor: Any chest pain or syncopal episodes?\nPatient: No faintness, just lightheadedness and feeling exhausted afterwards.",
+    status: "DRAFT",
+    timestamp: "2026-05-20T10:10:00Z",
+    sourceDevice: "iQOO 12 Pro (Android)",
+    aiConfidence: 0.91,
+  },
+];
+

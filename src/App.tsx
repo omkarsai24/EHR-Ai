@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { DoctorProfile, Appointment, PatientRecord, LabComponent, EHRNotification, DraftNote } from "./types";
-import { initialDoctorProfile, initialAppointments, initialPatients, initialLabComponents, initialNotifications } from "./data/mockData";
+import { initialDoctorProfile, initialAppointments, initialPatients, initialLabComponents, initialNotifications, initialDraftNotes } from "./data/mockData";
 import { Header } from "./components/Header";
 import { Sidebar, SidebarTab } from "./components/Sidebar";
 import { DoctorProfileModal } from "./components/DoctorProfileModal";
@@ -34,8 +34,8 @@ export function App() {
   const [notifications, setNotifications] = useState<EHRNotification[]>(initialNotifications);
   const [selectedDate, setSelectedDate] = useState<string>("2026-05-20");
 
-  // Synced Mobile Draft Notes
-  const [draftNotes, setDraftNotes] = useState<DraftNote[]>([]);
+  // Synced Mobile Draft Notes (with fallback for static Vercel preview)
+  const [draftNotes, setDraftNotes] = useState<DraftNote[]>(initialDraftNotes);
 
   // Fetch mobile draft notes from backend with 3-second live polling
   useEffect(() => {
