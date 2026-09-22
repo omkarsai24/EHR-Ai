@@ -1,6 +1,7 @@
 # DocAssist AI - Clinical EHR AI Platform
 
-[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)](https://ehr-ai-omkarsai.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-success?style=for-the-badge&logo=github)](https://omkarsai24.github.io/EHR-Ai/)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployment_Ready-black?style=for-the-badge&logo=vercel)](https://ehr-ai-omkarsai.vercel.app)
 [![React 19](https://img.shields.io/badge/React-19.0-61dafb?style=for-the-badge&logo=react)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev)
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind-v4.0-38bdf8?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com)
@@ -10,11 +11,13 @@
 
 ---
 
-## 🌐 Live Web Preview & Demo
+## 🌐 Live Interactive Preview
 
-Experience the full interactive MediCore EHR dashboard directly in your browser:
+Anyone can test and explore the full MediCore EHR dashboard directly in the browser:
 
-### 🔗 **[https://ehr-ai-omkarsai.vercel.app](https://ehr-ai-omkarsai.vercel.app)**
+### 🔗 **Live URL**: [https://omkarsai24.github.io/EHR-Ai/](https://omkarsai24.github.io/EHR-Ai/)
+
+*(Also configured for Vercel deployment at: [https://ehr-ai-omkarsai.vercel.app](https://ehr-ai-omkarsai.vercel.app))*
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fomkarsai24%2FEHR-Ai)
 
@@ -45,20 +48,6 @@ Our team focuses on solving a real-world problem in small clinics: **the excessi
 
 ---
 
-## 🚀 One-Click Deploy to Vercel
-
-You can deploy your own instance of this EHR platform directly to Vercel with zero configuration:
-
-1. Click the button below:
-   
-   [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fomkarsai24%2FEHR-Ai)
-
-2. Connect your GitHub account and import `omkarsai24/EHR-Ai`.
-3. *(Optional)* Add your `GEMINI_API_KEY` under Environment Variables.
-4. Click **Deploy**! Vercel will build and assign your live preview domain.
-
----
-
 ## 💻 Local Development Setup
 
 ### Prerequisites
@@ -82,7 +71,7 @@ You can deploy your own instance of this EHR platform directly to Vercel with ze
    Create a `.env` file based on `.env.example`:
    ```env
    GEMINI_API_KEY="your_gemini_api_key_here"
-   APP_URL="https://ehr-ai-omkarsai.vercel.app"
+   APP_URL="https://omkarsai24.github.io/EHR-Ai/"
    ```
 
 4. **Launch Development Server:**
@@ -102,7 +91,8 @@ You can deploy your own instance of this EHR platform directly to Vercel with ze
 | **Frontend Framework** | React 19, TypeScript, Vite 8 |
 | **Styling & UI** | Tailwind CSS v4, Lucide React Icons, Framer Motion |
 | **Data Visualization** | Recharts (Longitudinal lab trends & biometric charts) |
-| **Deployment & Hosting** | Vercel Edge Network |
+| **Live Hosting** | GitHub Pages & Vercel Edge Network |
+| **CI/CD** | GitHub Actions (`deploy.yml`) |
 | **AI Engine** | Google Gemini API (`@google/genai`) |
 | **Backend Integration** | Express.js, TypeScript |
 
