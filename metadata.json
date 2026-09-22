@@ -1,0 +1,6 @@
+{
+  "name": "MediCore AI EHR Dashboard",
+  "description": "AI-Powered Clinical Documentation & EHR Dashboard with Phone-to-PC Sync, Live Gemini AI Assistant, Exam Summaries & Custom Doctor Profile.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
